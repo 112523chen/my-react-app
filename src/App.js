@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+    render(){
+        return(
+            <div className='display'>
+                <h1>Welcome to My Future Page</h1>
+                <p>For now please excuse my new website at it's current state</p>
+                <p>Click this the button below for my other website</p>
+                <button><a href='https://112523chen.github.io'>Cick Here</a></button>
+            </div>
+        );
+    };
+};
+
+ReactDOM.render(<App />,document.getElementById('app'));
 
 export default App;
