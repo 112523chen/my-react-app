@@ -1,18 +1,17 @@
-import React from "react"
-import About from "./components/About";
-import Foot from "./components/Foot"
-import Info from "./components/Info"
-import Project from "./components/Project"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Project from "./components/Project/Project";
 
 function App() {
 
   return (
-    <div>
-        <Info/>
-        <About/>
-        <Project/>
-        <Foot/>
-    </div>
+    <Router>
+        <Routes>
+            <Route path="" element={<Home />} />
+            <Route path="/recent_project" element={<Project />} />
+        </Routes>
+    </Router>
   )
 }
 
