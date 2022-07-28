@@ -12,7 +12,7 @@ function Card(props) {
                 <div className="card-location">
                     <img src={require("../../images/pin.png")} alt="pin" />
                     <p className="card-country">{props.country}</p>
-                    <a href={props.mapLink} target={"_blank"} className="card-maps">View on Google Maps</a>
+                    <a href={props.mapLink} target={"_blank"} rel="noopener noreferrer" className="card-maps">View on Google Maps</a>
                 </div>
                 <div className="card-details">
                     <div className="location-n-time">
